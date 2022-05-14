@@ -3,12 +3,12 @@
     padding-bottom: 94px;
 }
 
-.achivements-list {
+.achivements__list {
     display: flex;
     justify-content: center;
 }
 
-.achivement-icon {
+.achivement__icon {
     width: 270px;
     height: 120px;
     background-color: var(--bacground-color-icon);
@@ -18,17 +18,17 @@
     align-items: center;
 }
 
-.achivements-item:not(:last-child) {
+.achivements__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.achivements-div {
+.achivements__div {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
 }
 
-.achivements-item-title {
+.achivements__item--title {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
@@ -38,7 +38,7 @@
     margin-bottom: 10px;   
 }
 
-.achivements-item-text { 
+.achivements__item--text { 
     font-size: 14px;   
     line-height: 1.7;
     letter-spacing: 0.03em;

@@ -64,11 +64,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.addresses__link:hover,
-.addresses__link:focus {
-    color: var(--main-btn-color);
+    &:hover,
+    &:focus {
+        color: var(--main-btn-color);
+    }
 }
 
 .addresses__logo-studio {
@@ -114,6 +113,10 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: var(--bacground-hover-icon);
+    }
 }
 
 .soc__item + .soc__item {
@@ -124,9 +127,8 @@
     fill: currentColor;
 }
 
-.soc__link:hover,
-.soc__link:focus {
-    background-color: var(--bacground-hover-icon);
+.sub {
+    margin: 0 auto;
 }
 
 .sub__title {
@@ -190,9 +192,10 @@
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 }
 
-.sub__button:hover,
-.sub__button:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+

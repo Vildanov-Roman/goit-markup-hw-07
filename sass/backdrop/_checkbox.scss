@@ -77,11 +77,12 @@
     letter-spacing: 0.03em;
     color: var(--web-txt-color);
     margin-left: 5px;
+    &:focus {
+        color: var(--activ-btn-color);
+    }
 }
 
-.checkbox-link:focus {
-    color: var(--activ-btn-color);
-}
+
 
 .madal-btn {
     font-family: 'Roboto';
@@ -105,10 +106,10 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+        background-color: var(--activ-btn-color);
+        outline: none;
+        }
 }
 
-.madal-btn:hover,
-.madal-btn:focus {
-    background-color: var(--activ-btn-color);
-    outline: none;
-}

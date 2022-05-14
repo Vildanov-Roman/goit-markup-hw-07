@@ -1,9 +1,9 @@
-.clients {
+.client {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
- .client-title {
+ .client__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -15,21 +15,20 @@
     margin-bottom: 50px;
 }
 
-.client-list {
+.client__list {
     display: flex;
     justify-content: center;
 }
 
-.client-item {
+.client__item {
     width: 170px;
     height: 92px;
+    & + & {
+        margin-left: 30px;
+    }
 }
 
-.client-item + .client-item {
-    margin-left: 30px;
-}
-
-.client-icon-link {
+.client__link {
     width: 100%;
     height: 100%;
     color: var(--color-icon);
@@ -42,14 +41,14 @@
     transition-property: color, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        border:1px solid var(--main-btn-color);
+        color: var(--main-btn-color);
+    }
 }
 
-.client-icon {
+.client__icon {
     fill: currentColor;
 }
 
-.client-icon-link:hover,
-.client-icon-link:focus {
-    border:1px solid var(--main-btn-color);
-    color: var(--main-btn-color);
-}

@@ -3,11 +3,11 @@
     padding-bottom: 94px;
 }
 
-.development-list {
+.development__list {
     display: flex;
 }
 
-.development-title {
+.development__title {
     text-align: center;
     font-weight: 700;
     font-size: 36px;
@@ -17,21 +17,21 @@
     margin-bottom: 50px;
 }
 
-.development-item {
+.development__item {
     position: relative;
 }
 
-.development-item:not(:last-child) {
+.development__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.development-img {
+.development__img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-.development-poducts {
+.development__text {
     display: flex;
     position: absolute;
     width: 100%;

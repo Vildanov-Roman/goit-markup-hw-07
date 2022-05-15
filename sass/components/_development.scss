@@ -19,10 +19,9 @@
 
 .development__item {
     position: relative;
-}
-
-.development__item:not(:last-child) {
-    margin-right: 30px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .development__img {

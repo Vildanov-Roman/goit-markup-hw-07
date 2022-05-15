@@ -43,10 +43,10 @@
 .nav__list {
     display: flex;
 }
+
 .nav__list .nav__item + .nav__item {
     margin-left: 50px;
 }
-
 
 .list-contact {
     display: flex;
@@ -79,22 +79,20 @@
 
 .nav__link--active {
     color: var(--main-btn-color);
+    &::after {
+        position: absolute;
+        bottom: -2px;
+        display: block;
+        content: "";
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background: var(--main-btn-color);        
+    }
 }
 
 .nav__item {
     position: relative;
-}
-
-.nav__link--active::after {
-    position: absolute;
-    bottom: -2px;
-    display: block;
-    content: "";
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background: var(--main-btn-color);
-    
 }
 
 .nav__link,

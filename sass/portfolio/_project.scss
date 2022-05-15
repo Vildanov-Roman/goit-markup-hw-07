@@ -27,18 +27,16 @@
 
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
     color: var(--hero-text-color);
-    background-color: var(--background-color-detail);    
-}
-
-.projects__link:hover .projects__detail,
-.projects__link:focus .projects__detail {
-    z-index: 0;    
-    transform: translate(0);
+    background-color: var(--background-color-detail);   
+    .projects__link:hover &,
+    .projects__link:focus & {
+        z-index: 0;    
+        transform: translate(0);
+    } 
 }
 
 .projects__list {
@@ -49,6 +47,15 @@
 .projects__item {
     margin-right: 30px;
     margin-bottom: 30px;
+    &:nth-child(3n+3) {
+        margin-right: 0;
+    }
+    &:nth-last-child(-n+3) {
+        margin-bottom: 0;
+    }    
+    &:nth-child(9) {
+        margin: 0;
+    }
 }
 
 .projects__link {
@@ -60,18 +67,6 @@
     &:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
-}
-
-.projects__item:nth-child(3n+3) {
-    margin-right: 0;
-}
-
-.projects__item:nth-last-child(-n+3) {
-    margin-bottom: 0;
-}
-
-.projects__item:nth-child(9) {
-    margin: 0;
 }
 
 .projects__img {

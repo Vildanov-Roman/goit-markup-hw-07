@@ -62,10 +62,6 @@ img {
   --border-color-textarea: rgba(33, 33, 33, 0.2);
 }
 
-img {
-  display: block;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;

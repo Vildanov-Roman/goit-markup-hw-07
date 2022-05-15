@@ -2,13 +2,13 @@
 @import './util/util';
 @import './util/hidden';
 @import './util/body';
+@import './util/placeholder';
 
-
-@import './base/hero';
-@import './base/achive';
-@import './base/development';
-@import './base/team';
-@import './base/clients';
+@import './commons/hero';
+@import './commons/achive';
+@import './commons/development';
+@import './commons/team';
+@import './commons/clients';
 
 @import './layout/header';
 @import './layout/footer';
@@ -16,7 +16,7 @@
 @import './backdrop/checkbox';
 @import './backdrop/modal';
 
-@import './portfolio/portfolio-btn';
+@import './portfolio/portfolio_btn';
 @import './portfolio/project';
 
 

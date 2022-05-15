@@ -70,18 +70,14 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus,
+    &:active {
+        color: var(--main-btn-color);
+    }
 }
 
-.nav__link--active,
-.nav__link:hover,
-.nav__link:focus,
-.nav__link:active,
-.list-contact__link:hover ,
-.list-contact__link:focus,
-.footer-contact-link:hover,
-.footer-contact-link:focus,
-.potrfolio-button:hover,
-.potrfolio-button:focus {
+.nav__link--active {
     color: var(--main-btn-color);
 }
 
@@ -124,14 +120,13 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover ,
+    &:focus {
+        color: var(--main-btn-color);
+    }
 }
 
 .list-contact__icon {
     margin-right: 10px;
     fill: currentColor;
-}
-
-.list-contact__link:hover,
-.list-contact__link:focus {
-    color: var(--main-btn-color);
 }
